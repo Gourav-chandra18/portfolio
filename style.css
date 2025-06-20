@@ -1,0 +1,207 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: url('https://unsplash.com/s/photos/mountain') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 25px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #00eaff;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00eaff;
+}
+
+/* Home Section */
+#home {
+    padding: 120px 0;
+}
+
+#home h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #00eaff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+/* About Section */
+#about p {
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Projects Section */
+#projects .project {
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
+}
+
+#projects .project img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+#projects h3 {
+    margin-top: 10px;
+    color: #00eaff;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #bbb;
+}
+
+#contact .btn {
+    width: fit-content;
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-links li {
+        margin: 10px 0;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+}
